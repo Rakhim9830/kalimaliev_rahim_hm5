@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_light"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="@color/green_light"
+        android:text="<-"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/text_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+
+        android:id="@+id/username"
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/gradient_white"
+        android:backgroundTint="@color/white"
+        android:hint="Username"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view" />
+
+    <EditText
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:id="@+id/email"
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:hint="Email"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintEnd_toEndOf="@id/username"
+        android:background="@color/gradient_white"
+        android:backgroundTint="@color/white">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+android:textStyle="bold"
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/gradient_white"
+        android:backgroundTint="@color/white"
+        android:hint="PASSWORD"
+        app:layout_constraintEnd_toEndOf="@id/email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/email">
+
+    </EditText>
+
+
+  <Button
+      android:id="@+id/next"
+      android:layout_marginTop="15sp"
+      android:textColor="@color/black"
+    android:backgroundTint="@color/white"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:text="NEXT"
+      android:layout_width="350dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@id/password"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      >
+
+  </Button>
+
+    <ImageView
+        android:id="@+id/sova"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/next"
+        app:layout_constraintStart_toStartOf="@id/next"
+        app:layout_constraintEnd_toEndOf="@id/next"
+        android:src="@drawable/icon"
+        android:layout_marginTop="50dp"
+        >
+
+    </ImageView>
+
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sova"
+        app:layout_constraintStart_toStartOf="@id/sova"
+        app:layout_constraintEnd_toEndOf="@id/sova"
+        android:text="Trivia"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
